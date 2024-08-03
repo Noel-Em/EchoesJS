@@ -1,4 +1,4 @@
-# Echoes | JavaScript
+# Echoes V 1.0 | JavaScript
 Echoes is a powerful and versatile JavaScript library designed to help you easily manage your website and the interactions within it.
 
 With Echoes, you can get any useful information from any page you are creating.

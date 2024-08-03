@@ -108,9 +108,19 @@ export class EventHandler {
 
     onStart(start_function) {
         if(typeof(start_function) === 'function') {
-            start_function();
+            document.addEventListener("DOMContentLoaded", function() {
+                start_function();
+            });
         } else {
             ELogger.error('The argument of "onStart" is not a function');
+        }
+    }
+
+    onAwake(awake_function) {
+        if(typeof(awake_function) === 'function') {
+            awake_function();
+        } else {
+            ELogger.error('The argument of "onAwake" is not a function');
         }
     }
 
@@ -143,7 +153,6 @@ class EventBehaviour {
 //  -----------  EVENTS  -----------
 
 
-//element.addEventListener('click', clickHandler);
 export class OnHover extends EventBehaviour {
     
     #element = null;
